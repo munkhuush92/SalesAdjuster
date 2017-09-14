@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@color/colorMainBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/changeModeBtn"
+                style="@style/fontRightTabBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MODE" />
+
+            <TextView
+                android:id="@+id/textViewTop"
+                style="@style/fontTopText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TAP TO SELECT DISCOUNT "
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="495dp"
+            android:layout_weight="1"
+            tools:context="com.example.munkhuush.salesadjuster.MainActivity"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/cancelBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="1"
+            android:text="CANCEL" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.3">
+        <Button
+            android:id="@+id/customBtn"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRightSideButtonBackground"
+            style="@style/fontRightTabBtn"
+            android:text="CUSTOM" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="5">
+
+        <!--number picker with button at bbotom -->
+
+        <LinearLayout
+            android:id="@+id/layoutRightSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:weightSum="4"
+            android:background="@color/colorNumberPickerConBackground"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/rightEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Summer Sale"
+                android:textAlignment="center"
+                style="@style/fontMainTextNormal"
+                android:textSize="20sp"
+               />
+            <!--number picker should be here-->
+            <LinearLayout
+                android:id="@+id/linearLayoutPercentMode2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center">
+
+
+                <NumberPicker
+                    android:id="@+id/whole_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="."
+                    style="@style/fontMainTextNormal"
+                    android:textSize="20sp" />
+
+                <NumberPicker
+                    android:id="@+id/frac_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    style="@style/fontMainTextNormal"
+                    android:text="%"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutAmountMode2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/amount_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    style="@style/fontMainTextNormal"
+                    android:text="$"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorRightSideButtonBackground"
+            style="@style/fontRightTabBtn"
+            android:text="KEYBOARD" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/applyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorRightSideButtonBackground"
+            style="@style/fontRightTabBtn"
+            android:text="APPLY" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

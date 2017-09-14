@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            style="@style/fontDialogText"
+            android:background="@color/colorRightSideButtonBackground"
+            android:text="Change of price"/>
+        <Spinner
+            android:id="@+id/changeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorLightBrown"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPercentMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <NumberPicker
+                android:id="@+id/euro_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorRightSideButtonBackground"
+                android:text="."/>
+
+            <NumberPicker
+                android:id="@+id/cent_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorRightSideButtonBackground"
+                android:text="%"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutAmountMode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            style="@style/fontDialogText"
+            android:background="@color/colorRightSideButtonBackground"
+            android:text="0.00"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

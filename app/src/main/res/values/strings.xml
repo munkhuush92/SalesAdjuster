@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SalesAdjuster</string>
+
+    <string name="CREATE_FAVORITE_SQL">
+        CREATE TABLE IF NOT EXISTS Favorite
+        (favoriteID INTEGER PRIMARY KEY AUTOINCREMENT, favoriteAmount REAL,
+        favoritePercent TEXT, favoriteName TEXT, favoriteType TEXT)
+    </string>
+
+    <string name="DROP_FAVORITE_SQL">
+        DROP TABLE IF EXISTS Favorite
+    </string>
+
+</resources>

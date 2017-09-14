@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorNumberPickerConBackground">#FDC315</color>
+    <color name="colorRightSideButtonBackground">#414042</color>
+    <color name="colorLightBrown">#98414042</color>
+    <color name="colorEditButtonBackground">#ACACAD</color>
+    <color name="colorItemBackground">#ECEDEF</color>
+    <color name="colorMainBackground">#E3E4E6</color>
+
+</resources>
